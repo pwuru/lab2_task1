@@ -67,7 +67,6 @@
             label1.Size = new Size(80, 20);
             label1.TabIndex = 3;
             label1.Text = "Сторона a";
-            label1.Click += label1_Click;
             // 
             // label2
             // 
@@ -119,8 +118,7 @@
             Controls.Add(textNumberB);
             Controls.Add(textNumberA);
             Name = "Form1";
-            Text = "Form1";
-            Load += Form1_Load;
+            Text = "Задача на if";
             ResumeLayout(false);
             PerformLayout();
         }

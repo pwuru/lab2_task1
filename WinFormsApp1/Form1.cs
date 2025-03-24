@@ -11,16 +11,6 @@ namespace WinFormsApp1
             textNumberC.Text = Properties.Settings.Default.numberC.ToString();
         }
 
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button1_Click(object sender, EventArgs e)
         {
             double numberA, numberB, numberC;
@@ -33,6 +23,7 @@ namespace WinFormsApp1
             }
             catch (FormatException)
             {
+                MessageBox.Show("Необходимо ввести 3 вещественных числа", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
 
